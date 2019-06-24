@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.youth.banner.Banner
+        android:id="@+id/frist_ban"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"></com.youth.banner.Banner>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/frist_ban"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_frist_home"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher" />
+            <TextView
+                android:id="@+id/tv_frist_home"
+                android:layout_below="@id/iv_frist_home"
+                android:text="居家"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/iv_frist_kitchen"
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/tv_frist_kitchen"
+                android:layout_below="@id/iv_frist_kitchen"
+                android:text="居家"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/iv_frist_parts"
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_frist_parts"
+                android:layout_below="@id/iv_frist_parts"
+                android:text="居家"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/iv_frist_clothes"
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_frist_clothes"
+                android:layout_below="@id/iv_frist_clothes"
+                android:text="居家"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_frist_more"
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_frist_more"
+                android:layout_below="@id/iv_frist_more"
+                android:text="居家"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+    
+    <TextView
+        android:layout_below="@id/ll"
+        android:id="@+id/navi_tv"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:text="品牌制造商直供     >"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/navi_lv"
+        android:layout_below="@id/navi_tv"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>
